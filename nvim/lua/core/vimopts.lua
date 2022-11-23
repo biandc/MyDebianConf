@@ -1,6 +1,9 @@
 
 vim.cmd('syntax on')
 vim.cmd('filetype plugin indent on')
+-- vim.cmd("set whichwrap+=<,>,[,],h,l")
+-- vim.cmd([[set iskeyword+=-]])
+vim.cmd([[set formatoptions-=cro]])
 
 vim.scriptencoding = 'utf-8'
 vim.opt.encoding = 'utf-8'
@@ -44,3 +47,11 @@ vim.opt.signcolumn = 'yes'
 vim.opt.visualbell = true
 vim.opt.formatoptions = ''
 
+
+--[[ local opts = {
+    
+}
+
+for k,v in pairs(opts) do
+    vim.opt[k] = v
+end ]]

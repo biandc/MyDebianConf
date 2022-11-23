@@ -5,6 +5,8 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     -- everforest
     use 'sainnhe/everforest'
+    -- colorscheme
+    use("folke/tokyonight.nvim")
     -- lsp
     use 'neovim/nvim-lspconfig'
     -- mason
@@ -29,22 +31,12 @@ return require('packer').startup(function(use)
     use 'nvim-telescope/telescope-file-browser.nvim'
     -- autopairs
     use 'windwp/nvim-autopairs'
-    -- alternate-toggler
-    -- use 'rmagatti/alternate-toggler'
     -- Comment
     use 'numToStr/Comment.nvim'
-    -- targets
-    -- use 'wellle/targets.vim'
-    -- vim-visual-multi
-    -- use 'mg979/vim-visual-multi'
     -- rnvimr
     use 'kevinhwang91/rnvimr'
-    -- nvim-web-devicons
-     use 'kyazdani42/nvim-web-devicons'
-    -- use 'nvim-tree/nvim-web-devicons'
+    -- bufferline
+    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
     -- lualine
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'kevinhwang91/nvim-web-devicons', opt = true }
-    }
+    use 'nvim-lualine/lualine.nvim'
 end)

@@ -3,7 +3,10 @@ local C = {}
 
 function C.config()
   -- Set up nvim-cmp.
-  local cmp = require'cmp'
+  local status_ok,cmp = pcall(require, 'cmp')
+  if not status_ok then
+      return
+  end
 
   cmp.setup({
     snippet = {

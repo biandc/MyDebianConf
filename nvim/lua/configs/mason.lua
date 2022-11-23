@@ -1,7 +1,11 @@
 local C = {}
 
 function C.config()
-    require("mason").setup({
+    local status_ok, conf = pcall(require, "mason")
+    if not status_ok then
+        return
+    end
+    conf.setup({
         ui = {
             icons = {
                 package_installed = "✓",
@@ -9,7 +13,7 @@ function C.config()
                 package_uninstalled = "✗"
             }
         }
-    })    
+    })
 end
 
 return C
