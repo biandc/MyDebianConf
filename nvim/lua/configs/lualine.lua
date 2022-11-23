@@ -196,7 +196,7 @@ function C.config()
     
     ins_right {
       'branch',
-      icon = '',
+      icon = 'branch',
       color = { fg = colors.violet, gui = 'bold' },
     }
     

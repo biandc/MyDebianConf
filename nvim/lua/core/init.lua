@@ -19,3 +19,5 @@ require("configs.Comment").config()
 
 -- require("configs.everforest").config()
 require("configs.lualine").config()
+
+require("configs.devicons").config()

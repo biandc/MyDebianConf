@@ -5,11 +5,6 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     -- everforest
     use 'sainnhe/everforest'
-    -- lualine
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    }
     -- lsp
     use 'neovim/nvim-lspconfig'
     -- mason
@@ -28,8 +23,6 @@ return require('packer').startup(function(use)
     use 'quangnguyen30192/cmp-nvim-ultisnips'
     use 'dcampos/nvim-snippy'
     use 'dcampos/cmp-snippy'
-    -- treesitter
-    -- use { 'nvim-treesitter/nvim-treesitter'} -- , run = ':TSUpdate' }
     -- telescope
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
@@ -46,4 +39,12 @@ return require('packer').startup(function(use)
     -- use 'mg979/vim-visual-multi'
     -- rnvimr
     use 'kevinhwang91/rnvimr'
+    -- nvim-web-devicons
+     use 'kyazdani42/nvim-web-devicons'
+    -- use 'nvim-tree/nvim-web-devicons'
+    -- lualine
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kevinhwang91/nvim-web-devicons', opt = true }
+    }
 end)
