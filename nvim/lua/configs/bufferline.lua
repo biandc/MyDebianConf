@@ -5,6 +5,9 @@ function C.config()
     if not status_ok then
     	return
     end
+
+    vim.keymap.set('n', '<tab>', ':BufferLineCycleNext<cr>')
+    vim.keymap.set('n', '<s-tab>', ':BufferLineCyclePrev<cr>')
     
     bufferline.setup({
     	options = {
