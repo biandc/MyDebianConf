@@ -21,7 +21,7 @@ vim.opt.ttimeoutlen = 0
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 
--- vim.opt.mouse = 'a'
+vim.opt.mouse = 'c'
 vim.opt.clipboard:append("unnamedplus")
 
 vim.opt.autoindent = true

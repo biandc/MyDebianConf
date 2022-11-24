@@ -3,7 +3,7 @@ require("module.plugins")
 
 require("module.autopairs")
 -- aerial nvim 0.8+
--- require("module.aerial")
+require("module.aerial")
 
 require("module.bufferline")
 

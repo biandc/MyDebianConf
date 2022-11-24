@@ -51,7 +51,7 @@ return packer.startup(function(use)
     -- lualine
     use 'nvim-lualine/lualine.nvim'
     -- aerial nvim0.8+
-    -- use 'stevearc/aerial.nvim'
+    use 'stevearc/aerial.nvim'
 
     -- file
     -- telescope

@@ -1,7 +1,7 @@
 vim.g.mapleader = ' '
 
-vim.keymap.set('n', 'fs', ':wall<cr>')
-vim.keymap.set('n', 'fw', ':wqall<cr>')
+vim.keymap.set('n', 'fs', 'gg=G:w<cr>')
+vim.keymap.set('n', 'fw', 'gg=G:wq<cr>')
 vim.keymap.set('n', 'fq', ':qall<cr>')
 
 vim.keymap.set('n', '1', '^')

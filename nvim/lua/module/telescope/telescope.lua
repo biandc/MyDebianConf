@@ -3,10 +3,10 @@ local actions = require("telescope.actions")
 
 --telescope.load_extension("project")
 require("telescope").load_extension("file_browser")
+require("telescope").load_extension("aerial")
 
 require("telescope").setup{
     defaults = {
-
         prompt_prefix = " ",
         selection_caret = " ",
         path_display = { "smart" },
@@ -58,5 +58,13 @@ require("telescope").setup{
             -- disables netrw and use telescope-file-browser in its place
             hijack_netrw = true,
         },
+        aerial = {
+            show_nesting = {
+                ['_'] = false, -- This key will be the default
+                json = true,   -- You can set the option for specific filetypes
+                yaml = true,
+                lua = true,
+            }
+        }
     }
 }
