@@ -60,6 +60,13 @@ return packer.startup(function(use)
     use 'nvim-telescope/telescope-file-browser.nvim'
     -- rnvimr
     use 'kevinhwang91/rnvimr'
+    -- nvim-tree
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons',
+        },
+    }
 
     -- code
     -- lsp
