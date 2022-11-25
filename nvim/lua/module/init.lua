@@ -18,6 +18,7 @@ require("module.lualine")
 require("module.mason")
 
 require("module.nvimtree")
+require("module.neotest")
 
 require("module.rnvimr")
 

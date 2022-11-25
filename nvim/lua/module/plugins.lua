@@ -45,7 +45,7 @@ return packer.startup(function(use)
     -- everforest
     use 'sainnhe/everforest'
     -- tokyonight
-    use("folke/tokyonight.nvim")
+    use "folke/tokyonight.nvim"
     -- bufferline
     use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
     -- lualine
@@ -87,16 +87,30 @@ return packer.startup(function(use)
     use 'quangnguyen30192/cmp-nvim-ultisnips'
     use 'dcampos/nvim-snippy'
     use 'dcampos/cmp-snippy'
-    use({
+    use "rafamadriz/friendly-snippets"
+
+    -- treesitter
+    use{
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
-    })
+    }
 
     -- other
     -- autopairs
     use 'windwp/nvim-autopairs'
     -- Comment
     use 'numToStr/Comment.nvim'
+
+    -- neotest
+    use {
+        'nvim-neotest/neotest',
+        requires = {
+            "nvim-lua/plenary.nvim",
+            "nvim-treesitter/nvim-treesitter",
+            "antoinemadec/FixCursorHold.nvim",
+            'nvim-neotest/neotest-go',
+        }
+    }
 
     if PACKER_BOOTSTRAP then
         require("packer").sync()
