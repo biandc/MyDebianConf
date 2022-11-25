@@ -1,8 +1,7 @@
 vim.g.mapleader = ' '
 
-vim.keymap.set('n', 'fs', ':w<cr>')
-vim.keymap.set('n', 'fw', ':wq<cr>')
-vim.keymap.set('n', 'fq', ':q<cr>')
+vim.keymap.set('n', 'fw', ':w<cr>')
+vim.keymap.set('n', ';q', ':qall<cr>')
 
 -- vim.keymap.set('n', '1', '^')
 -- vim.keymap.set('n', '2', '$')

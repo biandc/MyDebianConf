@@ -5,6 +5,18 @@ vim.cmd('filetype plugin indent on')
 -- vim.cmd([[set iskeyword+=-]])
 vim.cmd([[set formatoptions-=cro]])
 
+local auto_save = vim.api.nvim_create_augroup("AUTO_SAVE",{clear = true})
+vim.api.nvim_create_autocmd(
+    {"CursorHold"},
+    {
+        pattern = "*",
+        group = auto_save,
+        callback = function ()
+            vim.fn.execute("silent! update")
+        end
+    }
+)
+
 vim.scriptencoding = 'utf-8'
 vim.opt.encoding = 'utf-8'
 vim.opt.fileencoding = 'utf-8'
