@@ -159,6 +159,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  neoformat = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
+  },
   neotest = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/neotest",
@@ -238,6 +243,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/ultisnips",
     url = "https://github.com/SirVer/ultisnips"
+  },
+  ["vim-bookmarks"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/vim-bookmarks",
+    url = "https://github.com/MattesGroeger/vim-bookmarks"
   },
   ["vim-vsnip"] = {
     loaded = true,

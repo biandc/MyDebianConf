@@ -67,6 +67,8 @@ return packer.startup(function(use)
             'nvim-tree/nvim-web-devicons',
         },
     }
+    -- bookmarks
+    use 'MattesGroeger/vim-bookmarks'
 
     -- code
     -- lsp
@@ -94,6 +96,8 @@ return packer.startup(function(use)
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
     }
+    -- neoformat
+    use 'sbdchd/neoformat'
 
     -- other
     -- autopairs

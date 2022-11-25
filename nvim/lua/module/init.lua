@@ -19,6 +19,7 @@ require("module.mason")
 
 require("module.nvimtree")
 require("module.neotest")
+require("module.neoformat")
 
 require("module.rnvimr")
 
