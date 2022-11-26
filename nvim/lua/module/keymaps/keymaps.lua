@@ -3,6 +3,7 @@ vim.g.mapleader = ' '
 vim.keymap.set('n', 'fw', ':w<cr>')
 vim.keymap.set('n', 'fq', ':bd<cr>')
 vim.keymap.set('n', ';q', ':qall<cr>')
+vim.keymap.set('n', ';b', ':b<cr>')
 
 -- vim.keymap.set('n', '1', '^')
 -- vim.keymap.set('n', '2', '$')
