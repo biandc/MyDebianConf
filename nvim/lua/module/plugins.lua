@@ -99,7 +99,6 @@ return packer.startup(function(use)
     -- neoformat
     use 'sbdchd/neoformat'
 
-    -- other
     -- autopairs
     use 'windwp/nvim-autopairs'
     -- Comment
@@ -115,6 +114,9 @@ return packer.startup(function(use)
             'nvim-neotest/neotest-go',
         }
     }
+
+    -- git
+    use 'lewis6991/gitsigns.nvim'
 
     if PACKER_BOOTSTRAP then
         require("packer").sync()

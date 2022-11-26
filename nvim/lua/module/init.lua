@@ -10,6 +10,8 @@ require("module.bufferline")
 require("module.cmp")
 require("module.Comment")
 
+require("module.gitsigns")
+
 require("module.keymaps")
 
 require("module.lsp")
