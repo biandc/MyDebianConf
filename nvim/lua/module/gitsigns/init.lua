@@ -5,4 +5,4 @@ if not ok then
 end
 
 require('module.gitsigns.gitsigns')
--- require('module.gitsigns.keymaps')
+require('module.gitsigns.keymaps')

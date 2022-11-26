@@ -118,6 +118,15 @@ return packer.startup(function(use)
     -- git
     use 'lewis6991/gitsigns.nvim'
 
+    -- dap
+    use 'ravenxrz/DAPInstall.nvim'
+    use 'ravenxrz/nvim-dap'
+    -- use 'mfussenegger/nvim-dap'
+    use 'rcarriga/nvim-dap-ui'
+    use 'theHamsta/nvim-dap-virtual-text'
+    use 'nvim-telescope/telescope-dap.nvim'
+    -- use 'leoluz/nvim-dap-go'
+
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end
