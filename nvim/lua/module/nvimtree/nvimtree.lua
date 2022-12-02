@@ -7,7 +7,7 @@ require'nvim-tree'.setup {
         mappings = {
             custom_only = false,
             list = {
-                { key = { "<CR>", "o", "<2-LeftMouse>", "l" }, action = "edit" },
+                { key = { "<CR>", "o", "<2-LeftMouse>", "l", "h" }, action = "edit" },
             }
         }
     }
