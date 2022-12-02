@@ -7,7 +7,7 @@ vim.cmd([[set formatoptions-=cro]])
 
 local auto_save = vim.api.nvim_create_augroup("AUTO_SAVE",{clear = true})
 vim.api.nvim_create_autocmd(
-    {"CursorHold"},
+    {"CursorHold","ModeChanged","TextChanged"},
     {
         pattern = "*",
         group = auto_save,
