@@ -20,7 +20,7 @@ vim.keymap.set('n', ';l', '<c-w><right>', opts)
 vim.keymap.set('n', ';w', '<c-w>w', opts)
 -- vim.keymap.set('n', ';<', '<c-w><', opts)
 -- vim.keymap.set('n', ';>', '<c-w>>', opts)
-vim.keymap.set('n', '<c-w>', '<c-w>+', opts)
+vim.keymap.set('n', '<c-w>=', '<c-w>+', opts)
 -- vim.keymap.set('n', '-', '<c-w>-', opts)
 
 
