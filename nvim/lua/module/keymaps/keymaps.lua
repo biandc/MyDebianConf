@@ -11,7 +11,7 @@ vim.keymap.set('n', ';b', ':b<cr>', opts)
 -- vim.keymap.set('n', '2', '$', opts)
 -- vim.keymap.set('n', 'n', 'N', opts)
 -- vim.keymap.set('n', 'N', 'n', opts)
-vim.keymap.set('n', 'ff', 'viw<esc>#``', opts)
+-- vim.keymap.set('n', 'ff', 'viw<esc>#``', opts)
 
 vim.keymap.set('n', ';h', '<c-w><left>', opts)
 vim.keymap.set('n', ';j', '<c-w><down>', opts)
