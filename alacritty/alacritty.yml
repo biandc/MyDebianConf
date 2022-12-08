@@ -894,6 +894,10 @@
   # Highlight window damage information.
   #highlight_damage: false
 
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: true
+
 window:
   decorations: "none" # full
   opacity: 0.9
@@ -928,16 +932,20 @@ colors:
 
 font:
   normal:
-    family: JetBrainsMono
+    family: JetBrainsMonoNL Nerd Font Mono
+    # family: JetBrainsMonoNerdFont
     style: Regular
   bold:
-    family: JetBrainsMono
+    family: JetBrainsMonoNL Nerd Font Mono
+    # family: JetBrainsMonoNerdFont
     style: Bold
   italic:
-    family: JetBrainsMono
+    family: JetBrainsMonoNL Nerd Font Mono
+    # family: JetBrainsMonoNerdFont
     style: Italic
   bold_italic:
-    family: JetBrainsMono
+    family: JetBrainsMonoNL Nerd Font Mono
+    # family: JetBrainsMonoNerdFont
     style: Bold Italic
   size: 16.0
 
@@ -946,5 +954,5 @@ shell:
   args:
     - --login
 
-mouse_bindings:
-  - { mouse: Right,             action: Copy }
+# mouse_bindings:
+#   - { mouse: Right,             action: Copy }
