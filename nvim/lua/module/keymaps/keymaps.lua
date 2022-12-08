@@ -5,6 +5,7 @@ local opts = { noremap=true, silent=true }
 vim.keymap.set('n', 'fw', ':w<cr>', opts)
 vim.keymap.set('n', 'fq', ':bd<cr>', opts)
 vim.keymap.set('n', ';qq', ':qall<cr>', opts)
+vim.keymap.set('n', ';b', ':b<cr>', opts)
 
 -- vim.keymap.set('n', '1', '^', opts)
 -- vim.keymap.set('n', '2', '$', opts)
