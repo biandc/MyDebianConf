@@ -44,8 +44,7 @@ return packer.startup(function(use)
     -- colorscheme
     -- everforest
     use 'sainnhe/everforest'
-    -- tokyonight
-    use "folke/tokyonight.nvim"
+    use 'sainnhe/sonokai'
     -- bufferline
     use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
     -- lualine

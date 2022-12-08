@@ -1,4 +1,3 @@
-
 local hide_in_width = function()
     return vim.fn.winwidth(0) > 80
 end
@@ -66,7 +65,7 @@ local filepath = {
 require("lualine").setup({
     options = {
         icons_enabled = true,
-        theme = "tokyonight",
+        theme = "sonokai",
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
         disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },
@@ -93,3 +92,4 @@ require("lualine").setup({
     tabline = {},
     extensions = {},
 })
+

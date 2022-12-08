@@ -33,5 +33,5 @@ require("module.telescope")
 require("module.vimopts")
 
 -- colorscheme
+-- require("module.sonokai")
 require("module.everforest")
--- require("module.tokyonight")
