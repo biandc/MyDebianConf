@@ -900,7 +900,7 @@ selection:
 
 window:
   decorations: "none" # full
-  opacity: 0.9
+  opacity: 0.95 # 0.9
   startup_mode: Maximized
   dimensions:
     columns: 120
