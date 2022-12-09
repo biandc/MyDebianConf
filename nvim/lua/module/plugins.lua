@@ -126,6 +126,8 @@ return packer.startup(function(use)
     use 'nvim-telescope/telescope-dap.nvim'
     -- use 'leoluz/nvim-dap-go'
 
+    -- ssh copy
+    use 'ojroques/vim-oscyank'
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end
