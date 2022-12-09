@@ -25,7 +25,7 @@ require("module.nvimtree")
 require("module.neotest")
 require("module.neoformat")
 
-require("module.oscyank")
+require("module.osc52")
 
 require("module.rnvimr")
 
